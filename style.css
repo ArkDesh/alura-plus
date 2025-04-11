@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #00030C;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #F9F9F9;
+    --cor-para-detalhe: #C0C0C0;
+    --cor-botao: #167BF7;
+    --font: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font);
+}
+
+.principal {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__conteudo {
+    margin: 0 8em;
+}
+
+.conteudo__titulo {
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.conteudo__imagem {
+    margin: 1em 0 3em;
+}
+
+.conteudo__botao {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.conteudo_botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.conteudo__texto {
+    color: var(--cor-para-detalhe);
+    font-size: 12px;
+}
+
+.secundario {
+   align-items: center;
+    margin: 0 10em;
+}
+
+.container__imagem {
+    width: 90%;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    margin-bottom: 0.3em;
+    font-weight: 700;
+}
+
+.descricao__texto {
+    color: var(--cor-terciaria);
+    line-height: 150%;
+}
+
+.botao_combo {
+    margin-top: 1em;
+    display: inline-block;
+    text-shadow: 2px 2px 4px #00000040;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 5em;
+}
+
+.lista__item {
+    font-size: 32px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 8em 4em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 6%;
+}
+
+.rodape__link {
+    display: inline-block;
+}
+
+.rodape__link a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--cor-secundaria)
+}
+
+.rodape__texto {
+    margin: 2em 2em 0;
+    color: var(--cor-para-detalhe);
+}
+
